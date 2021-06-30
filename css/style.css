@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 25vh auto;
+  height: 50vh;
+  width: 70vw;
+}
+.container .left-side {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3%;
+  padding: 3%;
+  background-color: #1b1938;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.container .left-side .block-1 span {
+  color: #aa5cdb;
+}
+.container .left-side .block-2 p {
+  color: rgba(255, 255, 255, 0.75);
+}
+.container .left-side .block-3 {
+  display: flex;
+  margin-top: 10%;
+}
+.container .left-side .block-3 [class^=box-] {
+  flex-grow: 1;
+  width: 100%;
+}
+.container .left-side .block-3 [class^=box-] h6 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+.container .right-side {
+  flex-basis: 50%;
+  background-image: linear-gradient(rgba(65, 6, 101, 0.75), rgba(65, 6, 101, 0.75)), url("../../stats-preview-card-component-main/images/image-header-desktop.jpg");
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    width: 90vw;
+    height: 80vh;
+  }
+  .container .left-side {
+    flex-basis: 66.6666666667%;
+    text-align: center;
+  }
+  .container .left-side .block-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .container .right-side {
+    flex-basis: 33.3333333333%;
+    order: -1;
+  }
+}/*# sourceMappingURL=style.css.map */
