@@ -59,7 +59,7 @@ body {
 }
 .container .right-side {
   flex-basis: 50%;
-  background-image: linear-gradient(rgba(65, 6, 101, 0.75), rgba(65, 6, 101, 0.75)), url("../../stats-preview-card-component-main/images/image-header-desktop.jpg");
+  background-image: linear-gradient(rgba(65, 6, 101, 0.75), rgba(65, 6, 101, 0.75)), url("../img/image-header-desktop.jpg");
   background-size: cover;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -84,7 +84,11 @@ body {
     flex-grow: 1;
   }
   .container .right-side {
-    flex-basis: 33.3333333333%;
     order: -1;
+    flex-basis: 33.3333333333%;
+    background-image: linear-gradient(rgba(65, 6, 101, 0.75), rgba(65, 6, 101, 0.75)), url("../img/image-header-mobile.jpg");
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
